@@ -16,9 +16,9 @@ Proyek Peduli Lingkungan menggunakan CSS untuk menciptakan tampilan yang modern,
 # Fitur dalam JavaScript
 - **Tombol Toggle Menu**: Menyembunyikan dan menampilkan daftar menu ketika ikon menu diklik, menggunakan event listener dan manipulasi kelas CSS.
 # Tampilan Proyek
-Proyek ini dapat diakses secara online di [Github Pages](Link Web)
+Proyek ini dapat diakses secara online di [Github Pages](https://muhammaddafaalvin.github.io/project-uts-pemrograman-web/)
 # Credits
 Tugas ini dibuat oleh Muhammad Dafa Alvin Zuhdi, Firzan Zulzabbar, dan Nur Aini Setya Putri. Jika anda memiliki pertanyaan atau masukan, silahkan hubungi kami melalui
-- [Email Muhammad Dafa Alvin Zuhdi]
+- [Email Muhammad Dafa Alvin Zuhdi](muhammaddafa.23083@mhs.unesa.ac.id)
 - [Email Firzan Zulzabbar](firzan.23076@mhs.unesa.ac.id)
 - [Email Nur Aini Setya Putri](nuraini.23077@mhs.unesa.ac.id)
