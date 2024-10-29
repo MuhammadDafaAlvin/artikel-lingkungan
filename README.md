@@ -2,10 +2,10 @@
 Peduli Lingkungan 🌍 Selamat datang di proyek Peduli Lingkungan! Proyek ini merupakan website artikel yang bertujuan untuk menyebarkan kesadaran akan pentingnya menjaga lingkungan. Di dalamnya, Anda akan menemukan berbagai artikel, solusi, dan informasi terkait cara menjaga kelestarian alam serta dampak positifnya bagi kehidupan.
 # Struktur HTML
 Struktur HTML di proyek ini diatur dengan rapi menggunakan elemen-elemen semantik untuk meningkatkan aksesibilitas dan kemudahan navigasi. Elemen-elemen utama yang digunakan adalah:
-- <header>: Menampilkan logo dan navigasi utama.
-- <nav>: Navigasi untuk berpindah antar halaman situs, seperti Beranda, Artikel, Solusi, dan Tentang Kami.
-- <main>: Bagian utama yang menampilkan konten halaman. 
-- <footer>: Bagian bawah halaman yang memuat informasi Pembuat Web
+- <header> Menampilkan logo dan navigasi utama.
+- <nav> Navigasi untuk berpindah antar halaman situs, seperti Beranda, Artikel, Solusi, dan Tentang Kami.
+- <main> Bagian utama yang menampilkan konten halaman. 
+- <footer> Bagian bawah halaman yang memuat informasi Pembuat Web
 # Desain CSS
 Proyek Peduli Lingkungan menggunakan CSS untuk menciptakan tampilan yang modern, responsif, dan menarik. Teknik-teknik CSS yang diterapkan di proyek ini meliputi:
 - **Responsif**: Media query digunakan untuk memastikan tampilan tetap optimal pada berbagai ukuran layar, baik desktop maupun mobile, sehingga pengguna dapat mengakses konten dengan nyaman.
