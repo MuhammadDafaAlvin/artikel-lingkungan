@@ -74,6 +74,7 @@ main {
     justify-content: center;
 
     h1 {
+      text-align: center;
       font-size: 5rem;
       margin-bottom: 0.5rem;
       color: rgb(192, 190, 190);
@@ -111,7 +112,7 @@ main .container-artikel {
   color: white;
 
   .box {
-    height: 37rem;
+    height: auto;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -132,18 +133,20 @@ main .container-artikel {
       width: 75%;
       height: auto;
       margin: 2rem 0 1rem 0;
+      color: #e8e5e5;
     }
 
     p {
       width: 75%;
       margin-bottom: 1rem;
       overflow: hidden;
+      color: #929191;
     }
 
     a[info="selengkapnya"] {
       text-decoration: none;
       padding: 1rem 3.5rem;
-      margin-top: 1rem;
+      margin: 1rem 0 3rem 0;
       background-color: rgb(27, 8, 237);
       color: white;
       border-radius: 3rem;
@@ -154,4 +157,10 @@ main .container-artikel {
 
 main .container-artikel .box:hover {
   border: 1px solid aliceblue;
+  scale: 1.1;
+  transform: translateY(-1rem);
+
+  a[info="selengkapnya"] {
+    transform: translateY(0.5rem);
+  }
 }

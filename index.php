@@ -33,7 +33,7 @@
             <p class="hero-header">Special Place for <span class="text-gray">&#8594</span> Special Moments</>
             <p class="paragraf-primary">Alam adalah lukisan terindah yang diciptakan oleh Sang Maha Pencipta. Setiap goresan warna di langit, setiap hembusan angin, adalah adalah bentuk cinta-Nya, seolah mengingatkan kita untuk mencintai dan menjaga keindahan bumi ini &#127795.</p>
             <div class="link">
-                <a href="#manfaat" class="artikel">Artikel</a>
+                <a href="artikel.php" class="artikel">Artikel</a>
                 <a href="#team" class="team">Team</a>
             </div>
         </section>
