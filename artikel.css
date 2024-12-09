@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+nav {
+  /* background-color: whitesmoke; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a[info="beranda"] {
+    text-decoration: none;
+    margin: 0rem 2rem;
+    padding: 1rem 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 3rem;
+    gap: 1rem;
+    transition: 0.2s ease;
+
+    img {
+      width: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* Hover Navbar */
+
+nav .logo:hover {
+  scale: 1.1;
+}
+
+a[info="beranda"]:hover {
+  scale: 1.1;
+}
+
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+  .header {
+    height: 80vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 0.5rem;
+      color: rgb(192, 190, 190);
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgb(151, 150, 150);
+    }
+
+    a[info="telusuri"] {
+      text-decoration: none;
+      margin: 2rem;
+      padding: 1rem 2rem;
+      background-color: rgb(27, 8, 237);
+      color: white;
+      border-radius: 3rem;
+      transition: 1s ease;
+    }
+  }
+}
+
+main .header a[info="telusuri"]:hover {
+  transform: translateY(-0.8rem);
+}
+
+main .container-artikel {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 310px);
+  gap: 2rem;
+  justify-content: center;
+  width: 90%;
+  color: white;
+
+  .box {
+    height: 37rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(128, 125, 125);
+    border-radius: 2rem;
+    transition: 1s ease;
+
+    img {
+      width: 95%;
+      height: 50%;
+      border-radius: 2rem 2rem 0 0;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 2rem;
+      width: 75%;
+      height: auto;
+      margin: 2rem 0 1rem 0;
+    }
+
+    p {
+      width: 75%;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    a[info="selengkapnya"] {
+      text-decoration: none;
+      padding: 1rem 3.5rem;
+      margin-top: 1rem;
+      background-color: rgb(27, 8, 237);
+      color: white;
+      border-radius: 3rem;
+      transition: 1s ease;
+    }
+  }
+}
+
+main .container-artikel .box:hover {
+  border: 1px solid aliceblue;
+}
