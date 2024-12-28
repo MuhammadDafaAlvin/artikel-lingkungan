@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: sf-bold;
+  src: url("assets/font/SFPRODISPLAYBOLD.OTF.otf");
+}
+@font-face {
+  font-family: sf-regular;
+  src: url("assets/font/SFPRODISPLAYREGULAR.OTF.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +63,7 @@ nav .logo:hover {
 }
 
 a[info="beranda"]:hover {
-  scale: 1.1;
+  background-color: rgb(167, 2, 2);
 }
 
 main {
@@ -157,10 +166,4 @@ main .container-artikel {
 
 main .container-artikel .box:hover {
   border: 1px solid aliceblue;
-  scale: 1.1;
-  transform: translateY(-1rem);
-
-  a[info="selengkapnya"] {
-    transform: translateY(0.5rem);
-  }
 }

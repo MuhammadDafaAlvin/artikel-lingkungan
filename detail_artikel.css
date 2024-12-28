@@ -1,0 +1,81 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: sf-bold;
+  src: url("assets/font/SFPRODISPLAYBOLD.OTF.otf");
+}
+@font-face {
+  font-family: sf-regular;
+  src: url("assets/font/SFPRODISPLAYREGULAR.OTF.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+body {
+  background-color: #000;
+}
+
+nav {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a[info="beranda"] {
+    text-decoration: none;
+    margin: 0rem 2rem;
+    padding: 1rem 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 3rem;
+    gap: 1rem;
+    transition: 0.2s ease;
+
+    img {
+      width: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(44, 44, 45);
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* Hover Navbar */
+
+nav .logo:hover {
+  color: rgb(32, 147, 248);
+}
+
+a[info="beranda"]:hover {
+  background-color: rgb(167, 2, 2);
+}
+
+.artikel-container {
+  width: 75%;
+  border: 1px solid slategray;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 3rem auto;
+
+  h1 {
+    font-size: 3rem;
+    font-family: sf-bold;
+  }
+}

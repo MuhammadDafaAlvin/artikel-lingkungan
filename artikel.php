@@ -44,7 +44,7 @@ if ($conn->connect_error) {
       <div id="container-artikel" class="container-artikel">
 
         <?php
-        $sql = "SELECT judul, penulis, deskripsi_sampul, isi_deskripsi FROM Artikel";
+        $sql = "SELECT id, judul, penulis, deskripsi_sampul, isi_deskripsi FROM Artikel";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
           while ($row = $result->fetch_assoc()) { ?>
@@ -53,7 +53,7 @@ if ($conn->connect_error) {
               <p>Penulis: <?= $row['penulis']; ?></p>
               <p><?= $row['deskripsi_sampul']; ?>
               </p>
-              <a info="selengkapnya" href="#">Selengkapnya</a>
+              <a info="selengkapnya" href="detail_artikel.php?id=<?= $row['id']; ?>">Selengkapnya</a>
             </div>
         <?php }
         } else {
