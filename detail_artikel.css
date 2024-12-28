@@ -23,44 +23,26 @@ body {
 }
 
 nav {
-  background-color: whitesmoke;
+  width: 74%;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 1.5rem;
 
-  a[info="beranda"] {
+  a {
     text-decoration: none;
-    margin: 0rem 2rem;
-    padding: 1rem 2rem;
-    background-color: red;
+    padding: 0.5rem 1rem;
     color: white;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     transition: 0.2s ease;
   }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 1.2rem 3rem;
-    gap: 1rem;
-    transition: 0.2s ease;
-
-    img {
-      width: 3rem;
-    }
-
-    a {
-      text-decoration: none;
-      color: rgb(44, 44, 45);
-      font-size: 1.2rem;
-    }
+  a[info="beranda"] {
+    background-color: red;
   }
-}
-
-/* Hover Navbar */
-
-nav .logo:hover {
-  color: rgb(32, 147, 248);
+  .beranda {
+    background-color: green;
+  }
 }
 
 a[info="beranda"]:hover {
@@ -69,13 +51,37 @@ a[info="beranda"]:hover {
 
 .artikel-container {
   width: 75%;
-  border: 1px solid slategray;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 3rem auto;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0 auto;
 
   h1 {
+    margin-top: 2rem;
     font-size: 3rem;
     font-family: sf-bold;
   }
+}
+
+.artikel-header {
+  img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  .biodata-penulis {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: rgb(164, 162, 162);
+  }
+}
+
+.artikel-container .deskripsi {
+  margin-top: 1rem;
+  color: rgb(164, 162, 162);
 }

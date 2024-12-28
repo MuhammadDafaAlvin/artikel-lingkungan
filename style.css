@@ -58,7 +58,6 @@ nav {
   justify-content: space-between;
   padding: 1rem 4rem;
   font-size: 1.2rem;
-  margin-top: 1.1rem;
 }
 
 nav .logo {
@@ -97,7 +96,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  border-bottom: 1px solid black;
 }
 
 nav ul li a {
@@ -346,7 +346,7 @@ footer {
   color: aliceblue;
   height: auto;
   background-color: black;
-  border-radius: 7rem 7rem 0rem 0rem;
+  border-radius: 5rem 5rem 0rem 0rem;
 }
 
 footer .footer-header {
@@ -390,10 +390,7 @@ footer .box-card .card {
   overflow: hidden;
   padding: 1rem;
   transition: 0.2s ease;
-}
-
-footer .box-card .card:hover {
-  transform: scale(1.05);
+  margin-bottom: 5rem;
 }
 
 footer .box-card .card .nim {

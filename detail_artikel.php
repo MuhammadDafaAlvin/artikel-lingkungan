@@ -14,8 +14,9 @@ if ($conn->connect_error) {
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
 // Mengambil detail artikel
-$sql = "SELECT id, judul, penulis, isi_deskripsi, tanggal_publikasi FROM Artikel";
+$sql = "SELECT id, judul, gambar_artikel,deskripsi_gambar, penulis, isi_deskripsi, tanggal_publikasi FROM Artikel WHERE id = ?";
 $stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id); // "i" menunjukkan tipe data integer
 $stmt->execute();
 $result = $stmt->get_result();
 
@@ -40,32 +41,28 @@ $artikel = $result->fetch_assoc();
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <img src="img/holding-hand.png" alt="menanam" />
-                <a href="#">Peduli lingkungan</a>
-            </div>
-            <a info="beranda" href="artikel.php">Kembali</a>
+            <a href="index.php" class="beranda">Beranda</a>
+            <a info="beranda" href="artikel.php">Artikel</a>
         </nav>
     </header>
 
     <div class="artikel-container">
         <article>
             <div class="artikel-header">
+                <img src="<?= $artikel['gambar_artikel']; ?>" alt="<?= $artikel['judul']; ?>">
                 <h1><?= htmlspecialchars($artikel['judul']); ?></h1>
-                <div class="artikel-meta">
-                    <p>Penulis: <?= htmlspecialchars($artikel['penulis']); ?></p>
+                <div class="biodata-penulis">
+                    <p><?= htmlspecialchars($artikel['penulis']); ?></p>
                     <?php if (isset($artikel['tanggal_publikasi'])): ?>
-                        <p>Tanggal Publikasi: <?= date('d F Y', strtotime($artikel['tanggal_publikasi'])); ?></p>
+                        <p><?= date('d F Y', strtotime($artikel['tanggal_publikasi'])); ?></p>
                     <?php endif; ?>
                 </div>
             </div>
 
             <div class="artikel-content">
-                <?= nl2br(htmlspecialchars($artikel['isi_deskripsi'])); ?>
+                <p class="deskripsi"><?= nl2br(htmlspecialchars($artikel['isi_deskripsi'])); ?></p>
             </div>
         </article>
-
-        <a href="artikel.php" class="kembali-link">Kembali ke Daftar Artikel</a>
     </div>
 
     <?php
