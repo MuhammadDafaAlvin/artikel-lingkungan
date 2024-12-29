@@ -1,14 +1,5 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "artikellingkungan";
-
-$conn = new mysqli($host, $username, $password, $database);
-
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
+require_once 'config/connection.php';
 
 // Mengambil ID artikel dari URL
 $id = isset($_GET['id']) ? $_GET['id'] : null;
@@ -35,7 +26,7 @@ $artikel = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($artikel['judul']); ?></title>
-    <link rel="stylesheet" href="detail_artikel.css">
+    <link rel="stylesheet" href="public/css/detail_artikel.css">
 </head>
 
 <body>
