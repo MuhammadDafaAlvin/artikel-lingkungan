@@ -20,17 +20,19 @@
     </nav>
     <main>
       <div class="header">
-        <h1>Artikel Lingkungan</h1>
+        <h1>Artikel <span>Lingkungan</span></h1>
         <p>
           Temukan langkah sederhana untuk menciptakan lingkungan yang bersih
           dan sehat. Jadilah bagian dari perubahan positif dari yang dimulai
           dari diri kita sendiri. Dapatkan inspirasi dan solusi seputar cara
           menjaga kelestarian alam, serta dampak positifnya bagi kehidupan.
         </p>
-        <a info="telusuri" href="#container-artikel">Selengkapnya</a>
+        <div class="button__action">
+          <a info="telusuri" href="#container-artikel">Lihat Artikel</a>
+          <a info="beranda" href="index.php">Beranda</a>
+        </div>
       </div>
       <div id="container-artikel" class="container-artikel">
-
         <?php
         $sql = "SELECT id, judul, penulis, deskripsi_sampul, isi_deskripsi FROM Artikel";
         $result = $conn->query($sql);
@@ -41,7 +43,7 @@
               <p>Penulis: <?= $row['penulis']; ?></p>
               <p><?= $row['deskripsi_sampul']; ?>
               </p>
-              <a info="selengkapnya" href="detail_artikel.php?id=<?= $row['id']; ?>">Selengkapnya</a>
+              <a info="selengkapnya" href="detail_artikel.php?id=<?= $row['id']; ?>">Baca sekarang</a>
             </div>
         <?php }
         } else {
