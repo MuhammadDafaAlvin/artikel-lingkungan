@@ -18,17 +18,16 @@ if ($conn->connect_error) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Artikel</title>
-  <link rel="stylesheet" href="artikel.css" />
+  <link rel="stylesheet" href="public/css/artikel.css" />
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <img src="img/holding-hand.png" alt="menanam" />
-        <a href="#">Peduli lingkungan</a>
+      <a class="logo" href="index.php">Peduli lingkungan</a>
+      <div class="menu__button">
+        <a class="masuk" href="masuk.php">Masuk</a>
       </div>
-      <a info="beranda" href="index.php">Beranda</a>
     </nav>
     <main>
       <div class="header">
