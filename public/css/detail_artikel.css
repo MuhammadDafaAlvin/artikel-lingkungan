@@ -49,6 +49,10 @@ a[info="beranda"]:hover {
   background-color: rgb(167, 2, 2);
 }
 
+.beranda:hover {
+  background-color: rgb(2, 98, 2);
+}
+
 .artikel-container {
   width: 75%;
   padding: 0 1rem 1rem 1rem;

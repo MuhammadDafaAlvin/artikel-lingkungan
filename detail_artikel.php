@@ -33,7 +33,7 @@ $artikel = $result->fetch_assoc();
     <header>
         <nav>
             <a href="index.php" class="beranda">Beranda</a>
-            <a info="beranda" href="artikel.php">Artikel</a>
+            <a info="beranda" href="artikel.php">Kembali</a>
         </nav>
     </header>
 

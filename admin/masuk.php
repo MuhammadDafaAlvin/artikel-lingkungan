@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['loggedin'] = true;
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            header("Location: tambah_artikel.php");
+            header("Location: ../tambah_artikel.php");
             exit();
         } else {
             $error = "Password salah!";
