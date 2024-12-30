@@ -30,17 +30,9 @@ $artikel = $result->fetch_assoc();
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.php" class="beranda">Beranda</a>
-            <a info="beranda" href="artikel.php">Kembali</a>
-        </nav>
-    </header>
-
     <div class="artikel-container">
         <article>
             <div class="artikel-header">
-                <img src="<?= $artikel['gambar_artikel']; ?>" alt="<?= $artikel['judul']; ?>">
                 <h1><?= htmlspecialchars($artikel['judul']); ?></h1>
                 <div class="biodata-penulis">
                     <p><?= htmlspecialchars($artikel['penulis']); ?></p>
@@ -48,6 +40,7 @@ $artikel = $result->fetch_assoc();
                         <p><?= date('d F Y', strtotime($artikel['tanggal_publikasi'])); ?></p>
                     <?php endif; ?>
                 </div>
+                <img src="<?= $artikel['gambar_artikel']; ?>" alt="<?= $artikel['judul']; ?>">
             </div>
 
             <div class="artikel-content">
@@ -55,7 +48,6 @@ $artikel = $result->fetch_assoc();
             </div>
         </article>
     </div>
-
     <?php
     $stmt->close();
     $conn->close();

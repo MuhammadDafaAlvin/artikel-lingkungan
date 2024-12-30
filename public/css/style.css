@@ -1,11 +1,4 @@
-@font-face {
-  font-family: sf-bold;
-  src: url("assets/font/SFPRODISPLAYBOLD.OTF.otf");
-}
-@font-face {
-  font-family: sf-regular;
-  src: url("assets/font/SFPRODISPLAYREGULAR.OTF.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -16,15 +9,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h1,
-h3 {
-  font-family: sf-bold;
-}
-
-p {
-  font-family: sf-regular;
+  font-family: Inter;
 }
 
 .text-green {
@@ -91,10 +76,6 @@ nav ul li {
   transition: 0.2s ease;
 }
 
-/* nav ul li:hover {
-  border-bottom: 1px solid black;
-} */
-
 nav ul li a {
   text-decoration: none;
   color: #525252;
@@ -130,7 +111,7 @@ main .hero {
 }
 
 .hero-header {
-  font-family: sf-regular;
+  font-family: "Times New Roman", Times, serif;
   font-size: 6rem;
   text-align: center;
   line-height: 1;
@@ -353,7 +334,7 @@ footer .footer-header {
 }
 
 footer .footer-header h3 {
-  font-family: sf-regular;
+  font-family: Inter;
   font-size: 3rem;
 }
 

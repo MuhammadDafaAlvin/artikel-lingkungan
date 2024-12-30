@@ -36,26 +36,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Artikel - Peduli Lingkungan</title>
+    <link rel="stylesheet" href="public/css/tambah_artikel.css">
 </head>
 
 <body>
-    <h2>Tambah Artikel</h2>
     <form method="POST" enctype="multipart/form-data">
-        <label>Judul:</label>
-        <input type="text" name="judul" required><br>
-        <label>Penulis:</label>
-        <input type="text" name="penulis" required><br>
-        <label>Deskripsi Sampul:</label>
-        <textarea name="deskripsi_sampul" required></textarea><br>
-        <label>Isi Deskripsi:</label>
-        <textarea name="isi_deskripsi" required></textarea><br>
-        <label>Tanggal Publikasi:</label>
-        <input type="date" name="tanggal_publikasi" required><br>
-        <label>Gambar Artikel:</label>
-        <input type="file" name="gambar_artikel" required><br>
-        <label>Deskripsi Gambar:</label>
-        <textarea name="deskripsi_gambar" required></textarea><br>
-        <button type="submit">Tambah</button>
+        <div class="form-table">
+            <table>
+                <tr>
+                    <td><label for="judul">Judul:</label></td>
+                    <td><input type="text" name="judul" id="judul" required></td>
+                </tr>
+                <tr>
+                    <td><label for="penulis">Penulis:</label></td>
+                    <td><input type="text" name="penulis" id="penulis" required></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi_sampul">Deskripsi Sampul:</label></td>
+                    <td><textarea name="deskripsi_sampul" id="deskripsi_sampul" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="isi_deskripsi">Isi Deskripsi:</label></td>
+                    <td><textarea name="isi_deskripsi" id="isi_deskripsi" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal_publikasi">Tanggal Publikasi:</label></td>
+                    <td><input type="date" name="tanggal_publikasi" id="tanggal_publikasi" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gambar_artikel">Gambar Artikel:</label></td>
+                    <td><input type="file" name="gambar_artikel" id="gambar_artikel" required></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi_gambar">Deskripsi Gambar:</label></td>
+                    <td><textarea name="deskripsi_gambar" id="deskripsi_gambar" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Tambah</button></td>
+                </tr>
+            </table>
+        </div>
     </form>
 </body>
 

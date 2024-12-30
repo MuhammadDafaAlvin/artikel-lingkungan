@@ -1,12 +1,4 @@
-@font-face {
-  font-family: sf-bold;
-  src: url("assets/font/SFPRODISPLAYBOLD.OTF.otf");
-}
-
-@font-face {
-  font-family: sf-regular;
-  src: url("assets/font/SFPRODISPLAYREGULAR.OTF.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -20,6 +12,7 @@ html {
 
 body {
   background-color: #000;
+  font-family: Inter;
 }
 
 /* Start Navigation */

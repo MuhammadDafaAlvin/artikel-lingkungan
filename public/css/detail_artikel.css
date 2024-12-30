@@ -1,91 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: sf-bold;
-  src: url("assets/font/SFPRODISPLAYBOLD.OTF.otf");
-}
-@font-face {
-  font-family: sf-regular;
-  src: url("assets/font/SFPRODISPLAYREGULAR.OTF.otf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: aliceblue;
 }
 
 body {
+  color: aliceblue;
+  font-family: Inter;
   background-color: #000;
 }
 
-nav {
-  width: 74%;
-  margin: 2rem auto;
+.artikel-container {
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.artikel-container h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: Inter;
+}
+
+.artikel-header .biodata-penulis {
   display: flex;
   align-items: center;
-  justify-content: end;
-  gap: 1.5rem;
-
-  a {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: white;
-    border-radius: 0.5rem;
-    transition: 0.2s ease;
-  }
-  a[info="beranda"] {
-    background-color: red;
-  }
-  .beranda {
-    background-color: green;
-  }
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
-a[info="beranda"]:hover {
-  background-color: rgb(167, 2, 2);
+.artikel-header img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  margin-bottom: 3rem;
 }
 
-.beranda:hover {
-  background-color: rgb(2, 98, 2);
-}
-
-.artikel-container {
-  width: 75%;
-  padding: 0 1rem 1rem 1rem;
-  margin: 0 auto;
-
-  h1 {
-    margin-top: 2rem;
-    font-size: 3rem;
-    font-family: sf-bold;
-  }
-}
-
-.artikel-header {
-  img {
-    border-radius: 1rem;
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-
-  .biodata-penulis {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  p {
-    color: rgb(164, 162, 162);
-  }
+.artikel-header p {
+  color: rgb(164, 162, 162);
 }
 
 .artikel-container .deskripsi {
-  margin-top: 1rem;
   color: rgb(164, 162, 162);
+  font-size: 1.2rem;
 }
