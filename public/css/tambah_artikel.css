@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
-body {
-  font-family: Inter;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url("../../assets/images/hutan-tropis.jpg");
-  background-size: cover;
 }
 
-h2 {
-  text-align: center;
-  margin: 2rem 0;
+body {
+  font-family: Inter;
+  background-image: url("../../assets/images/hutan-tropis.jpg");
+  background-size: cover;
 }
 
 .form-table {
@@ -74,25 +73,75 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Media query untuk tampilan mobile */
-@media (max-width: 600px) {
-  table {
-    font-size: 14px; /* Ukuran font lebih kecil */
+/* ipad Pro */
+@media (max-width: 1024px) {
+  body {
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .form-table {
+    margin-bottom: 4rem;
   }
 
   th,
   td {
-    display: block; /* Sel tabel menjadi blok */
-    width: 90%; /* Lebar 100% */
-    box-sizing: border-box;
-    text-align: left;
-    border: none; /* Hilangkan border */
+    padding: 0;
+    display: block;
+    border: none;
   }
 
   td:before {
-    content: attr(data-label); /* Tampilkan label sebagai konten sebelum sel */
+    content: attr(data-label);
     font-weight: bold;
     display: block;
-    margin-bottom: 5px;
+  }
+}
+
+/* iPad Mini */
+@media (max-width: 768px) {
+  body {
+    background-repeat: no-repeat;
+  }
+
+  .form-table {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+
+  th,
+  td {
+    padding: 0;
+    display: block;
+    border: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  body {
+    background-repeat: no-repeat;
+  }
+
+  .form-table {
+    width: 90%;
+  }
+
+  th,
+  td {
+    padding: 0;
+    display: block;
+    border: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
   }
 }

@@ -51,3 +51,41 @@ body {
   color: rgb(164, 162, 162);
   font-size: 1.2rem;
 }
+
+/* iPad */
+
+@media (max-width: 1024px) {
+  .artikel-container {
+    width: 80%;
+  }
+
+  .artikel-header img {
+    height: 30vh;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .artikel-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  html {
+    font-size: 90%;
+  }
+
+  .artikel-container {
+    width: 90%;
+  }
+
+  .artikel-container h1 {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .artikel-header img {
+    height: 30vh;
+  }
+}

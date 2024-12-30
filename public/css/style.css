@@ -417,17 +417,55 @@ figcaption a {
   transition: 0.2s ease-in-out;
 }
 
-figcaption a:hover {
+figcaption a:hover {@media (max-width: 1024px) {
+  body {
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .form-table {
+    margin-bottom: 4rem;
+  }
+
+  th,
+  td {
+    padding: 0;
+    display: block;
+    border: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+  }
+}
   background-color: #fff;
 }
 
 /* Responsive */
 
+/* iPad Pro */
+@media (max-width: 1024px) {
+  main .hero {
+    height: 70vh;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
+
+  main .hero {
+    height: 80vh;
+  }
+
   nav {
     flex-wrap: wrap;
   }
@@ -457,9 +495,18 @@ figcaption a:hover {
 
 @media only screen and (max-width: 468px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
+
+  main .hero {
+    height: 80vh;
+  }
+
   main .manfaat .header-manfaat .apa-saja {
     width: 25rem;
+  }
+
+  footer {
+    border-radius: 3rem 3rem 0rem 0rem;
   }
 }

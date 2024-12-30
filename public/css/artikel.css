@@ -179,3 +179,43 @@ main .container-artikel a[info="selengkapnya"] {
   border-radius: 3rem;
   bottom: 0;
 }
+
+/* ipad Pro */
+@media (max-width: 1024px) {
+  main .header {
+    height: 50vh;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  main .container-artikel .box {
+    margin-bottom: 4rem;
+  }
+
+  main .container-artikel {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  html {
+    font-size: 80%;
+  }
+
+  main .header {
+    height: 60vh;
+  }
+
+  main .container-artikel .box {
+    margin-bottom: 4rem;
+  }
+
+  main .container-artikel {
+    gap: 0;
+  }
+}

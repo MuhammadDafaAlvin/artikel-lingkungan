@@ -83,3 +83,48 @@ button:hover {
   color: green;
   margin-bottom: 10px;
 }
+
+/* ipad Pro */
+@media (max-width: 1024px) {
+  body {
+    background-image: url("../../assets/images/hutan-tropis.jpg");
+    height: calc(100vh - 10rem);
+    background-size: cover;
+  }
+
+  .container {
+    margin-top: 10rem;
+    max-width: 700px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    background-image: url("../../assets/images/hutan-tropis.jpg");
+    height: calc(100vh - 10rem);
+    background-size: cover;
+  }
+
+  .container {
+    margin-top: 10rem;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  html {
+    font-size: 90%;
+  }
+
+  body {
+    background-image: url("../../assets/images/hutan-tropis.jpg");
+    height: calc(100vh - 10rem);
+    background-size: cover;
+  }
+
+  .container {
+    margin-top: 10rem;
+    max-width: 300px;
+  }
+}
