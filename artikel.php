@@ -37,18 +37,24 @@
         $sql = "SELECT id, judul, penulis, deskripsi_sampul, isi_deskripsi FROM Artikel";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
-          while ($row = $result->fetch_assoc()) { ?>
+          while ($row = $result->fetch_assoc()) {
+            $deskripsi_sampul = $row['deskripsi_sampul'];
+            $jumlah_kata = str_word_count($deskripsi_sampul);
+        ?>
             <div class="box">
               <h2><?= $row['judul']; ?></h2>
               <p>Penulis: <?= $row['penulis']; ?></p>
-              <p><?= $row['deskripsi_sampul']; ?>
-              </p>
+              <?php if ($jumlah_kata <= 10) { ?>
+                <p><?= $deskripsi_sampul; ?></p>
+              <?php } ?>
               <a info="selengkapnya" href="detail_artikel.php?id=<?= $row['id']; ?>">Baca sekarang</a>
             </div>
-        <?php }
+        <?php
+          }
         } else {
           echo '<p>Tidak ada artikel yang tersedia.</p>';
-        } ?>
+        }
+        ?>
       </div>
     </main>
   </header>
