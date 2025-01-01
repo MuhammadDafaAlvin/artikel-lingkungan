@@ -1,0 +1,229 @@
+main {
+  margin-bottom: 10rem;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .hero {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.hero-header {
+  font-family: sf-regular;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 1;
+  color: #000;
+}
+
+main .hero .link {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main .hero .link a {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+main .hero .link .artikel {
+  color: aliceblue;
+  transition: 0.3s linear;
+  background-color: rgb(253, 67, 5);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: sf-regular;
+}
+
+main .hero .link .artikel:hover {
+  transform: translateY(-0.8rem);
+}
+
+main .hero .link .team {
+  color: #1c1c1c;
+  transition: 0.3s linear;
+  background-color: rgb(211, 211, 211);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-family: sf-regular;
+}
+
+main .hero .link .team:hover {
+  transform: translateY(-0.8rem);
+}
+
+main .image-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .image-hero img {
+  width: 90%;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+}
+
+main .manfaat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+main .manfaat .header-manfaat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  width: 45%;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+main .manfaat .header-manfaat img {
+  width: 23rem;
+}
+
+main .manfaat .deskripsi-primary {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem 0;
+  color: #676767;
+}
+
+main .manfaat .deskripsi {
+  font-size: 1.5rem;
+  color: #676767;
+}
+
+main .manfaat .box-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 2rem;
+  justify-content: center;
+  width: 90%;
+}
+
+main .manfaat .box-image .box {
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 0.2s linear;
+}
+
+main .manfaat .box-image .box:hover {
+  transform: scale(1.1);
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img {
+  width: 5rem;
+  margin-top: 1rem;
+}
+.box figcaption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+main .manfaat .box-image .box .deskripsi {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.1;
+}
+
+main .solusi {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 7rem;
+  padding: 4rem 1rem 4rem 1rem;
+}
+
+main .solusi .penting {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+main .solusi .header {
+  width: 50%;
+  text-align: center;
+  font-size: 4rem;
+  color: #242323;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+main .solusi .deskripsi {
+  color: rgb(149, 148, 148);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+main .solusi .stress {
+  margin-bottom: 9rem;
+  width: 20rem;
+}
+
+main .solusi .box-solusi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 2rem;
+  justify-content: center;
+  width: 90%;
+}
+
+main .solusi .box-solusi .kotak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  height: 20rem;
+  text-align: center;
+  transition: 0.2s ease-in;
+}
+
+main .solusi .box-solusi .kotak:hover {
+  transform: scale(1.1);
+}
+
+.box-solusi .kotak img {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+main .solusi .box-solusi .kotak h3 {
+  color: #1c1c1c;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+main .solusi .box-solusi .kotak p {
+  width: 75%;
+  text-align: center;
+  color: rgb(126, 125, 125);
+}

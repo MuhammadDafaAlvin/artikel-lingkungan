@@ -1,0 +1,56 @@
+nav {
+    font-family: sf-regular;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav .logo img {
+    width: 3rem;
+  }
+  
+  nav .logo a {
+    text-decoration: none;
+    color: #676767;
+  }
+  
+  nav .logo a:hover {
+    color: black;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  nav ul li {
+    list-style: none;
+    transition: 0.2s ease;
+  }
+  
+  nav ul li:hover {
+    transform: scale(1.2);
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #525252;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  nav .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+  }
+  

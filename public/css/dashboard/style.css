@@ -1,0 +1,79 @@
+@import url("util.css");
+@import url("navbar.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("dark-mode.css");
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+
+  nav .nav-right {
+    order: 2;
+  }
+
+  nav ul {
+    order: 3;
+  }
+
+  .dark-mode-toggle {
+    font-size: 1.3rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav .logo a {
+    display: none;
+  }
+
+  nav .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  .hidden {
+    display: none;
+  }
+
+  main .manfaat .header-manfaat .apa-saja {
+    width: 30rem;
+  }
+
+  footer {
+    border-radius: 4rem 4rem 0 0;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  html {
+    font-size: 70%;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  .dark-mode-toggle {
+    font-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  main .manfaat .header-manfaat .apa-saja {
+    width: 25rem;
+  }
+}

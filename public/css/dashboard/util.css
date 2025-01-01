@@ -1,0 +1,54 @@
+@font-face {
+  font-family: sf-bold;
+  src: url("../../../assets/font/SFPRODISPLAYBOLD.OTF.otf");
+}
+@font-face {
+  font-family: sf-regular;
+  src: url("../../../assets/font/SFPRODISPLAYREGULAR.OTF.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-family: sf-bold;
+}
+
+p {
+  font-family: sf-regular;
+}
+
+.text-green {
+  color: rgb(42, 244, 2);
+}
+
+.text-blue {
+  color: rgb(0, 0, 222);
+}
+
+.text-gray {
+  color: #949494;
+}
+
+.bg-blue {
+  background-color: rgb(0, 0, 255);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  color: aliceblue;
+}
+
+.paragraf-primary {
+  width: 75%;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  text-align: center;
+}

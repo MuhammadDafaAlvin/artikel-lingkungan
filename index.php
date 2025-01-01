@@ -7,7 +7,7 @@
     <title> UTS Pemrograman Web</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/dashboard/style.css">
 </head>
 
 <body>
@@ -17,13 +17,18 @@
                 <img src="public/img/holding-hand.png" alt="menanam">
                 <a href="#">Peduli lingkungan</a>
             </div>
-            <div id="menu-icon" class="menu-icon">
-                <i class="ph ph-list"></i>
+            <div class="nav-right">
+                <div id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="ph ph-sun"></i>
+                </div>
+                <div id="menu-icon" class="menu-icon">
+                    <i class="ph ph-list"></i>
+                </div>
             </div>
             <ul id="menu-list" class="hidden">
                 <li><a href="#">Beranda</a></li>
                 <li><a href="artikel.php">Artikel</a></li>
-                <li><a href="#manfaat">Manfaat</a></li>
+                <li><a href="#solusi">Solusi</a></li>
                 <li><a href="#team">Tentang Kami</a></li>
             </ul>
         </nav>

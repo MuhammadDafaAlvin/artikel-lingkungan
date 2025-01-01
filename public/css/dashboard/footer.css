@@ -1,0 +1,103 @@
+footer {
+  color: aliceblue;
+  height: auto;
+  background-color: black;
+  border-radius: 7rem 7rem 0rem 0rem;
+}
+
+footer .footer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+footer .footer-header h3 {
+  font-family: sf-regular;
+  font-size: 3rem;
+}
+
+footer .footer-header .kelompok {
+  color: red;
+}
+
+footer .footer-header p {
+  color: rgb(162, 162, 163);
+  margin-top: 5px;
+}
+
+footer .box-card {
+  width: 90%;
+  margin: 4rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .box-card .card {
+  min-height: 35rem;
+  gap: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+  overflow: hidden;
+  padding: 1rem;
+  transition: 0.2s ease;
+  margin-bottom: 4rem;
+}
+
+footer .box-card .card .nim {
+  text-align: center;
+}
+
+footer .box-card .card img {
+  height: 23rem;
+  object-fit: cover;
+  position: center;
+  border-radius: 1rem;
+  margin-top: -6rem;
+}
+
+footer .box-card .card .firzan {
+  object-position: 0 -4rem;
+}
+
+footer .box-card .card .dafa {
+  object-position: 0 -5rem;
+}
+
+footer figcaption {
+  padding: 0rem 1rem 0 1rem;
+  border-radius: 1rem;
+  height: 3rem;
+  text-align: center;
+}
+
+footer figcaption p {
+  color: rgb(162, 162, 163);
+}
+
+figcaption a img {
+  width: 10px;
+  height: 10px;
+}
+
+figcaption a {
+  font-family: sf-regular;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(196, 197, 197);
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+figcaption a:hover {
+  background-color: #fff;
+}
