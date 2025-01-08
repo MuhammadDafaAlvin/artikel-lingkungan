@@ -1,24 +1,100 @@
-# project-uts-pemrograman-web
-Peduli Lingkungan 🌍 Selamat datang di proyek Peduli Lingkungan! Proyek ini merupakan website artikel yang bertujuan untuk menyebarkan kesadaran akan pentingnya menjaga lingkungan. Di dalamnya, Anda akan menemukan berbagai artikel, solusi, dan informasi terkait cara menjaga kelestarian alam serta dampak positifnya bagi kehidupan.
-# Struktur HTML
-Struktur HTML di proyek ini diatur dengan rapi menggunakan elemen-elemen semantik untuk meningkatkan aksesibilitas dan kemudahan navigasi. Elemen-elemen utama yang digunakan adalah:
-- <header> Menampilkan logo dan navigasi utama.
-- <nav> Navigasi untuk berpindah antar halaman situs, seperti Beranda, Artikel, Solusi, dan Tentang Kami.
-- <main> Bagian utama yang menampilkan konten halaman. 
-- <footer> Bagian bawah halaman yang memuat informasi Pembuat Web
-# Desain CSS
-Proyek Peduli Lingkungan menggunakan CSS untuk menciptakan tampilan yang modern, responsif, dan menarik. Teknik-teknik CSS yang diterapkan di proyek ini meliputi:
-- **Responsif**: Media query digunakan untuk memastikan tampilan tetap optimal pada berbagai ukuran layar, baik desktop maupun mobile, sehingga pengguna dapat mengakses konten dengan nyaman.
-- **Grid & Flexbox**: Tata letak halaman memanfaatkan Flexbox dan Grid untuk penataan elemen yang dinamis, memungkinkan penyesuaian yang fleksibel sesuai ukuran layar.
-- **Animasi CSS**: Beberapa elemen memiliki animasi transisi untuk meningkatkan pengalaman pengguna, terutama pada efek hover di tombol dan gambar.
-- **Custom Font**: Menggunakan font khusus dari folder assets untuk menciptakan identitas visual yang sesuai dengan tema lingkungan.
-- **Ikon SVG**: Menggunakan ikon-ikon SVG yang tersimpan di folder img untuk menambahkan elemen visual tanpa mengorbankan performa.
-# Fitur dalam JavaScript
-- **Tombol Toggle Menu**: Menyembunyikan dan menampilkan daftar menu ketika ikon menu diklik, menggunakan event listener dan manipulasi kelas CSS.
-# Tampilan Proyek
-Proyek ini dapat diakses secara online di [Github Pages](https://muhammaddafaalvin.github.io/project-uts-pemrograman-web/)
-# Credits
-Tugas ini dibuat oleh Muhammad Dafa Alvin Zuhdi, Firzan Zulzabbar, dan Nur Aini Setya Putri. Jika anda memiliki pertanyaan atau masukan, silahkan hubungi kami melalui
-- [Email Muhammad Dafa Alvin Zuhdi](muhammaddafa.23083@mhs.unesa.ac.id)
-- [Email Firzan Zulzabbar](firzan.23076@mhs.unesa.ac.id)
-- [Email Nur Aini Setya Putri](nuraini.23077@mhs.unesa.ac.id)
+# Environmental Articles Website 🌱
+
+Website ini dibuat untuk memenuhi tugas akhir mata kuliah Pemrograman Web. Website ini dirancang untuk menampilkan artikel bertema lingkungan dengan antarmuka tema gelap yang menarik. Pengguna dapat membaca artikel, dan pengguna terdaftar memiliki fitur tambahan untuk menambahkan artikel baru.
+
+## ✨ Fitur
+
+1. **Bacaan Artikel**:
+
+   - Tema gelap untuk kenyamanan membaca.
+   - Semua artikel dapat diakses oleh pengunjung.
+
+2. **Fitur Login dan Daftar**:
+
+   - Pengguna harus terdaftar untuk dapat menambahkan artikel.
+
+3. **Tambah Artikel**:
+   - Pengguna terdaftar dapat menambahkan artikel dengan:
+     - Judul artikel
+     - Penulis
+     - Tanggal publikasi
+     - Gambar
+   - Data artikel disimpan dalam basis data dan langsung ditampilkan di website.
+
+## 🛠️ Teknologi yang Digunakan
+
+- HTML, CSS, JavaScript, PHP, MySQL
+
+## ⚙️ Instalasi dan Konfigurasi
+
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini menggunakan **XAMPP** di lingkungan lokal Anda:
+
+### 1. **Persyaratan Sistem**
+
+Pastikan Anda telah menginstal:
+
+- **XAMPP**: Server lokal yang mencakup Apache, PHP, dan MySQL.
+- **Git** (opsional, jika Anda menggunakan perintah `git clone` untuk mendapatkan repositori).
+
+---
+
+### 2. **Langkah Instalasi**
+
+1. **Clone atau Unduh Repositori**
+
+   - Jika menggunakan Git:
+     ```bash
+     git clone https://github.com/MuhammadDafaAlvin/environmental-articles-website.git
+     ```
+   - Jika tidak menggunakan Git:
+     - Klik tombol **Code** di halaman repositori GitHub.
+     - Pilih **Download ZIP**, lalu ekstrak file ZIP di komputer Anda.
+
+2. **Pindahkan Proyek ke Folder XAMPP**
+
+   - Salin folder proyek Anda ke folder `htdocs` di direktori instalasi XAMPP. Biasanya:
+     ```
+     C:\xampp\htdocs\
+     ```
+   - Setelah itu, Anda dapat mengakses proyek melalui browser dengan URL:
+     ```
+     http://localhost/environmental-articles-website
+     ```
+
+3. **Konfigurasi Database**
+
+   - Buka **phpMyAdmin** melalui browser:
+     ```
+     http://localhost/phpmyadmin
+     ```
+   - Pastikan database bernama `artikellingkungan` sudah dibuat dan berisi data yang sesuai.
+     - Jika belum, impor file database yang tersedia di folder `database/` (bernama `artikellingkungan.sql`):
+       1. Klik database `artikellingkungan`.
+       2. Klik tab **Import**.
+       3. Pilih file `.sql` dan klik **Go**.
+
+4. **Sesuaikan Koneksi Database**
+
+   - Buka file konfigurasi database, biasanya `config.php` atau file serupa di proyek Anda.
+   - Sesuaikan pengaturan koneksi database seperti berikut:
+     ```php
+     <?php
+     $host = "127.0.0.1";
+     $user = "root";
+     $password = ""; // Kosongkan jika default XAMPP
+     $database = "artikellingkungan";
+     ?>
+     ```
+
+5. **Jalankan Server Lokal**
+   - Buka aplikasi **XAMPP** dan aktifkan modul **Apache** dan **MySQL**.
+   - Akses proyek Anda di browser:
+     ```
+     http://localhost/environmental-articles-website
+     ```
+
+---
+
+Setelah langkah ini selesai, website Anda siap digunakan di server lokal.
+
+---
